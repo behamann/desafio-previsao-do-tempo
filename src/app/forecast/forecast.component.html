@@ -1,0 +1,126 @@
+<div id="loader"></div>
+<div class="hidden" id="weather-data">
+  <div class="row">
+    <div class="col-md col-12">
+      <div class="weather panel panel-primary">
+        <div class="panel-heading" id="forecast-day-0"></div>
+        <div class="panel-body">
+          <div>
+            <img class="center" id="forecast-img-0" src="#">
+            <p class="lead" id="forecast-status-0"></p>
+            <p class="lead" id="forecast-temp-0"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md col-lg-3 col-12">
+      <div class="weather panel panel-primary">
+        <div class="panel-heading">Mín. e máx. da semana</div>
+        <div class="panel-body p-min-max">
+          <div>
+            <p class="lead mt-3" id="forecast-min"></p>
+            <p class="lead" id="forecast-max"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg col-12">
+      <div class="weather panel panel-primary">
+        <div class="panel-heading" id="forecast-weather-now"></div>
+        <div class="panel-body row">
+          <div class="col">
+            <p class="lead text-middle" id="activity-desc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <p class="col">Previsão para essa semana: </p>
+  </div>
+  <div class="row">
+    <div class="col col-md-4 col-lg">
+      <div class="weather panel panel-primary">
+        <div class="panel-heading" id="forecast-day-1"></div>
+        <div class="panel-body">
+          <div>
+            <img class="center icon-small-box" id="forecast-img-1" src="#">
+            <p class="lead status" id="forecast-status-1"></p>
+            <p class="lead" id="forecast-min-1"></p>
+            <p class="lead" id="forecast-max-1"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-md-4 col-lg">
+      <div class="weather panel panel-primary">
+        <div class="panel-heading" id="forecast-day-2"></div>
+        <div class="panel-body">
+          <div>
+            <img class="center icon-small-box" id="forecast-img-2" src="#">
+            <p class="lead status" id="forecast-status-2"></p>
+            <p class="lead" id="forecast-min-2"></p>
+            <p class="lead" id="forecast-max-2"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-md-4 col-lg">
+      <div class="weather panel panel-primary">
+        <div class="panel-heading" id="forecast-day-3"></div>
+        <div class="panel-body">
+          <div>
+            <img class="center icon-small-box" id="forecast-img-3" src="#">
+            <p class="lead status" id="forecast-status-3"></p>
+            <p class="lead" id="forecast-min-3"></p>
+            <p class="lead" id="forecast-max-3"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-md-4 col-lg">
+      <div class="weather panel panel-primary">
+        <div class="panel-heading" id="forecast-day-4"></div>
+        <div class="panel-body">
+          <div>
+            <img class="center icon-small-box" id="forecast-img-4" src="#">
+            <p class="lead status" id="forecast-status-4"></p>
+            <p class="lead" id="forecast-min-4"></p>
+            <p class="lead" id="forecast-max-4"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-md-4 col-lg">
+      <div class="weather panel panel-primary">
+        <div class="panel-heading" id="forecast-day-5"></div>
+        <div class="panel-body">
+          <div>
+            <img class="center icon-small-box" id="forecast-img-5" src="#">
+            <p class="lead status" id="forecast-status-5"></p>
+            <p class="lead" id="forecast-min-5"></p>
+            <p class="lead" id="forecast-max-5"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-md-4 col-lg">
+      <div class="weather panel panel-primary">
+        <div class="panel-heading" id="forecast-day-6"></div>
+        <div class="panel-body">
+          <div>
+            <img class="center icon-small-box" id="forecast-img-6" src="#">
+            <p class="lead status" id="forecast-status-6"></p>
+            <p class="lead" id="forecast-min-6"></p>
+            <p class="lead" id="forecast-max-6"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <p class="col">Variação da temperatura para essa semana: </p>
+  </div>
+  <!--<canvas #weaklyChart width="400" height="200"></canvas>-->
+  <chart [type]="type" [data]="data" [options]="options" #weaklyChart></chart>
+</div>
